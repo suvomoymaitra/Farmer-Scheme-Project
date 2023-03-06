@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Farmer Scheme-Farmer</title>
+</head>
+<body>
+<script>
+let FarmerSchemeObj=
+[
+	{
+		"FarmerName"  : "Mukhil",
+		"FarmerNumber": 9842561871,
+		"ADHAARno"   :515557953362,
+		"FarmerCrop"  :"Coconut",
+	
+		"FarmerPlace" : {
+			"DnStreet" :"66,2nd st",
+			"Area"        :"BharathiColony,Peelamedu",
+			"City"        :"Coimbatore",
+			"State"       :"TamilNadu"
+		}
+},
+{
+	"FarmerName"  : "Vishal",
+	"FarmerNumber": 9987654467,
+	"ADHAARno"   :546778986543,
+	"FarmerCrop"  : "Sugarcane",
+	"FarmerPlace" : {
+		"DnStreet" :"66,2nd st",
+		"Area"        :"dadar,2nd avenue",
+		"City"        :"Mumbai",
+		"State"       :"Maharashtra"
+	}
+},
+{
+	"FarmerName"  : "Suvomoy",
+	"FarmerNumber": 9988776655,
+	"ADHAARno"   :515567879890,
+	"FarmerCrop"  : "Rice",
+	"FarmerPlace" : {
+		"DnStreet" :"2,green village",
+		"Area"        :"N.G colony",
+		"City"        :"Kolkata",
+		"State"       :"West Bengal"
+	}
+},
+{
+	"FarmerName"  : "Riya",
+	"FarmerNumber": 9443191218,
+	"ADHAARno"   :789865434456,
+	"FarmerCrop"  : "Wheat",
+	"FarmerPlace" : {
+		"DnStreet" :"flat no.14,red village",
+		"Area"        :"Mahatma Gandhi avenue",
+		"City"        :"Hyderabad",
+		"State"       :"Telangana"
+	}
+}
+];
+
+for(i=0;i<4;i++)
+	{
+
+document.writeln('<table border=5 cellspacing=10 cellpadding=10>');
+
+document.writeln('<tr>');
+         document.writeln('<th>Farmer Name</th>');
+         document.writeln('<th>Farmer Contact</th>');
+         document.writeln('<th>Farmer ADHAAR no.</th>');
+         document.writeln('<th>Farmer Crop</th>');
+         document.writeln('<th>Farmer Place</th>');
+    document.writeln('</tr>');
+    
+document.writeln('<tr>');
+    document.writeln('<td>'+FarmerSchemeObj[i].FarmerName+'</td>');
+    document.writeln('<td>'+FarmerSchemeObj[i].FarmerNumber+'</td>');
+    document.writeln('<td>'+FarmerSchemeObj[i].ADHAARno+'</td>');
+    document.writeln('<td>'+FarmerSchemeObj[i].FarmerCrop+'</td>');
+    
+    document.writeln('<td>');
+    
+    document.writeln('<table border=5 cellspacing=10 cellpadding=10>');
+
+		    document.writeln('<tr>');
+				document.writeln('<th>Home Address</th>');
+			document.writeln('</tr>');
+			
+		    document.writeln('<tr>');
+	          document.writeln('<tr>');
+	          document.writeln('<th>street</th>');
+	          document.writeln('<th>Area</th>');
+	          document.writeln('<th>City</th>');
+	          document.writeln('<th>State</th>');
+		    document.writeln('</tr>');
+		          
+		    document.writeln('<tr>');
+		          document.writeln('<td>'+FarmerSchemeObj[i].FarmerPlace.DnStreet+'</td>');
+		          document.writeln('<td>'+FarmerSchemeObj[i].FarmerPlace.Area+'</td>');
+		          document.writeln('<td>'+FarmerSchemeObj[i].FarmerPlace.City+'</td>');
+		          document.writeln('<td>'+FarmerSchemeObj[i].FarmerPlace.State+'</td>');
+		   document.writeln('</tr>');
+	document.writeln('</table>');
+
+		  document.writeln('</td>')
+      
+document.writeln('</tr>');
+
+document.writeln('</table>');
+	}
+    
+    
+         
+</script>
+
+</body>
+</html>
