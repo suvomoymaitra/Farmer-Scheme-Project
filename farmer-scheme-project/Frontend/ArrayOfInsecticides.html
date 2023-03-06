@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script >
+
+ let ia=[
+	 
+	{
+		"distributorName" : 'ravi',
+		"NameOfPesticide" : 'abc',
+		"price"  :          '45',
+		"manufacturingDate": '2022-08-23',
+		"expiryDate"     :   '2024-07-24'
+	},
+	{
+		"distributorName" : 'ram',
+		"NameOfPesticide" : 'xyz',
+		"price"  :          '55',
+		"manufacturingDate": '2022-08-23',
+		"expiryDate"     :   '2024-07-24'
+	},
+	{
+		"distributorName" : 'rakesh',
+		"NameOfPesticide" : 'mno',
+		"price"  :          '65',
+		"manufacturingDate": '2022-08-23',
+		"expiryDate"     :   '2024-07-24'
+	}
+	
+	
+	
+	
+];
+
+for(i=0;i<3;i++)
+	{
+	   document.writeln('<table border=5 cellspacing=10 cellpadding=10>');
+	   
+	   document.writeln('<tr>');
+	   document.writeln('<th>distributor Name</th>');
+	   document.writeln('<th>name of pesticide</th>');
+	   document.writeln('<th>price</th>');
+	   document.writeln('<th>manufacturing date</th>');
+	   document.writeln('<th>expiry date</th>');
+	   document.writeln('<tr>');
+	   
+	   
+	   document.writeln('<tr>');
+	   document.writeln('<td>'+ia[i].distributorName+"</td>");
+	   document.writeln('<td>'+ia[i].NameOfPesticide+"</td>");
+	   document.writeln('<td>'+ia[i].price+"</td>");
+	   document.writeln('<td>'+ia[i].manufacturingDate+"</td>");
+	   document.writeln('<td>'+ia[i].expiryDate+"</td>");
+	   document.writeln('<tr>');
+	   
+	  
+	   document.writeln('</table>');
+  
+		
+
+
+
+	}
+
+
+
+</script>
+
+
+</body>
+</html>
