@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+		
+		FarmerArray = [
+			{
+				"FarmerId" : "1",
+				"FarmerName" : "Vishal",
+                "FarmerAdhaar": "809976785546",
+				"FarmerPhone" : "9078867987",
+				"FarmerRating" : "4.5",
+				"FarmerCrops" : [
+					{
+						"Crop" : "Wheat",
+						"quantity" : "100",
+						
+					},
+                    {
+						"Crop" : "Sugarcane",
+						"quantity" : "50",
+						
+					},
+                ],
+                "FarmerAddress":[
+                    {
+                        "street":"2nd street,Bharathi Colony",
+                        "Locality"  :"Peelamedu",
+                        "City"      :"Coimbatore",
+                        "State"     :"Tamil Nadu"
+                    }
+                ]
+					
+				
+			},
+			{
+				"FarmerId" : "2",
+				"FarmerName" : "Raj",
+                "FarmerAdhaar": "525545673365",
+				"FarmerPhone" : "9842561871",
+				"FarmerRating" : "4.1",
+				"FarmerCrops" : [
+					{
+						"Crop" : "Rice",
+						"quantity" : "50",
+						
+					},
+                    {
+						"Crop" : "Banana",
+						"quantity" : "150",
+						
+					},
+                    {
+						"Crop" : "Corn",
+						"quantity" : "120",
+						
+					},
+                ],
+                "FarmerAddress":[
+                    {
+                        "street":"55,2nd avenue ",
+                        "Locality"  :"Dadar",
+                        "City"      :"Mumbai",
+                        "State"     :"Maharashtra"
+                    }
+                ]
+					
+				
+			},
+            {
+				"FarmerId" : "3",
+				"FarmerName" : "Kamala",
+                "FarmerAdhaar": "515557953362",
+				"FarmerPhone" : "8056361871",
+				"FarmerRating" : "4.1",
+				"FarmerCrops" : [
+					{
+						"Crop" : "Coconut",
+						"quantity" : "200",
+						
+					},
+                    {
+						"Crop" : "Rice",
+						"quantity" : "150",
+						
+					},
+                    {
+						"Crop" : "Dates",
+						"quantity" : "70",
+						
+					},
+                ],
+                "FarmerAddress":[
+                    {
+                        "street":"4,2nd cross ",
+                        "Locality"  :"Mg Layout,Jp nagar",
+                        "City"      :"Bengaluru",
+                        "State"     :"Karnataka"
+                    }
+                ]
+					
+				
+			}
+			
+			
+		];	
+		
+		
+		
+		
+// html part
+		
+		document.writeln('<table border=5 cellspacing=10 cellpading=5>');
+		
+		// start of table heading
+		
+		document.writeln('<tr>');
+		
+		document.writeln('<th>Farmer ID</th>');
+		document.writeln('<th>Farmer Name</th>');
+        document.writeln('<th>Farmer Adhaar</th>');
+		document.writeln('<th>Farmer phone</th>');
+		document.writeln('<th>Farmer Rating</th>');
+		document.writeln('<th>Farmer Crops</th>');
+        document.writeln('<th>Farmer Address</th>');
+
+		
+		document.writeln('</tr>');
+		
+		// end of table heading
+		
+		for(let i=0;i<FarmerArray.length;i++){
+		
+			// start of first row
+			
+			document.writeln('<tr>');
+			
+			document.writeln('<td>' + FarmerArray[i].FarmerId + '</td>');
+            document.writeln('<td>' + FarmerArray[i].FarmerName + '</td>');
+            document.writeln('<td>' + FarmerArray[i].FarmerAdhaar + '</td>');
+            document.writeln('<td>' + FarmerArray[i].FarmerPhone + '</td>');
+            document.writeln('<td>' + FarmerArray[i].FarmerRating + '</td>');
+			
+			
+			document.writeln('<td>');
+			
+				document.writeln('<table border=5 cellspacing=10 cellpading=10>');
+				
+				// start of table heading
+				
+				document.writeln('<tr>');
+				
+				document.writeln('<th>Crop Name</th>');
+				document.writeln('<th>Quantity</th>');
+				
+				
+				document.writeln('</tr>');
+				
+				// end of table heading
+				
+				// start of first row
+				
+				console.log(FarmerArray[i].FarmerCrops.length);
+				
+				for(let j = 0;j<FarmerArray[i].FarmerCrops.length;j++){
+					document.writeln('<tr>');
+				
+					document.writeln('<td>' + FarmerArray[i].FarmerCrops[j].Crop + '</td>');
+					document.writeln('<td>' + FarmerArray[i].FarmerCrops[j].quantity + '</td>');
+				
+					
+					document.writeln('</tr>');
+				}
+				
+				// end of first row
+				
+			document.writeln('</td>');
+				
+				
+			document.writeln('</tr>');
+			document.writeln('</table>');
+			// end of first row
+				
+		
+        document.writeln('<td>');
+			
+            document.writeln('<table border=5 cellspacing=10 cellpading=10>');
+            
+            // start of table heading
+            
+            document.writeln('<tr>');
+            
+            document.writeln('<th>Street</th>');
+            document.writeln('<th>Locality</th>');
+            document.writeln('<th>City</th>');
+            document.writeln('<th>State</th>');
+            
+            
+            document.writeln('</tr>');
+            
+            // end of table heading
+            
+            // start of first row
+            
+            console.log(FarmerArray[i].FarmerAddress.length);
+            
+            for(let j = 0;j<FarmerArray[i].FarmerAddress.length;j++){
+                document.writeln('<tr>');
+            
+                document.writeln('<td>' + FarmerArray[i].FarmerAddress[j].street + '</td>');
+                document.writeln('<td>' + FarmerArray[i].FarmerAddress[j].Locality + '</td>');
+                document.writeln('<td>' + FarmerArray[i].FarmerAddress[j].City + '</td>');
+                document.writeln('<td>' + FarmerArray[i].FarmerAddress[j].State + '</td>');
+                
+            
+                
+                document.writeln('</tr>');
+            }
+
+        
+            
+            // end of first row
+            
+        document.writeln('</td>');
+            
+            
+        
+        document.writeln('</table>');
+        // end of first row
+        }    
+    
+			
+
+			
+		
+		
+		
+		
+		document.writeln('</table>');
+		
+       
+		
+		
+		
+		
+		
+	
+	</script>
+
+</body>
+</html>
